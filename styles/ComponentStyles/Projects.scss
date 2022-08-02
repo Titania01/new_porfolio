@@ -1,0 +1,22 @@
+.third-bg {
+    background: url("../../public/images/bg3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .card {
+        @apply w-full border border-solid border-[#ebe6e6] rounded-[2rem] mb-8;
+
+        .small-card { 
+            @apply bg-[#e1d9d9] h-[18rem] w-[80%] m-auto mt-12 border-solid border-[#ebe6e6] border rounded-[2rem];
+        }
+
+        .colour {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        span {
+            @apply bg-[#f3eeee];
+        }
+    }
+}

@@ -5,7 +5,7 @@ import { IName } from "../utils/types";
 
 const Navbar = ({ name, navLinks = Array(3).fill("link") }: IName) => {
   return (
-    <nav className="px-[13.5rem] bg-white dark:bg-transparent dark:text-white flex items-center justify-between h-10">
+    <nav className="px-[13.5rem] dark:bg-transparent dark:text-white flex items-center justify-between h-10">
       <h2 className="text-[#1f2937] dark:text-gray-200 font-bold ">{name}</h2>
       <div className="flex items-center gap-8">
         {navLinks.map((link, linkIndex) => (
@@ -19,10 +19,10 @@ const Navbar = ({ name, navLinks = Array(3).fill("link") }: IName) => {
         ))}
         <Image
           className=""
-          width={18}
-          height={18}
+          width={32}
+          height={32}
           alt="theme-icon"
-          src="/vectors/dark-icon.svg"
+          src="/vectors/dark--icon.svg"
         />
       </div>
     </nav>
