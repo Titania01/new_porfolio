@@ -3,4 +3,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+
+    .deep-blue {
+        @apply bg-[#1f2937] h-12 text-white flex items-center
+         rounded w-[14rem] justify-center
+    }
+    .white {
+        @apply bg-white h-12 text-black flex items-center rounded
+        w-[14rem] justify-center border-solid border-2 border-black
+    }
 }

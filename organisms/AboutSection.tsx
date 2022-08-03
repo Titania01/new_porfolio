@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Pointer from "../atoms/Pointer";
+
 const AboutSection = ({ about = "" }) => {
   return (
     <div className="second-bg" id="about">
@@ -19,15 +22,30 @@ const AboutSection = ({ about = "" }) => {
                 Languages
               </h2>
               <div className="flex items-center pt-4">
-                {/* <Pointer /> */}
+                <Image
+                  src="/vectors/pointer.svg"
+                  alt="red-pointer"
+                  height={18}
+                  width={18}
+                />
                 <p className="ml-8">HTML</p>
               </div>
               <div className="flex items-center pt-4">
-                {/* <Pointer /> */}
+                <Image
+                  src="/vectors/pointer.svg"
+                  alt="red-pointer"
+                  height={18}
+                  width={18}
+                />
                 <p className="ml-8">CSS</p>
               </div>
               <div className="flex items-center pt-4">
-                {/* <Pointer /> */}
+                <Image
+                  src="/vectors/pointer.svg"
+                  alt="red-pointer"
+                  height={18}
+                  width={18}
+                />
                 <p className="ml-8">JAVASCRIPT</p>
               </div>
             </div>
@@ -37,15 +55,30 @@ const AboutSection = ({ about = "" }) => {
                   Languages
                 </h2>
                 <div className="flex items-center pt-4">
-                  {/* <Pointer /> */}
+                  <Image
+                    src="/vectors/pointer.svg"
+                    alt="red-pointer"
+                    height={18}
+                    width={18}
+                  />
                   <p className="ml-8">HTML</p>
                 </div>
                 <div className="flex items-center pt-4">
-                  {/* <Pointer /> */}
+                  <Image
+                    src="/vectors/pointer.svg"
+                    alt="red-pointer"
+                    height={18}
+                    width={18}
+                  />
                   <p className="ml-8">CSS</p>
                 </div>
                 <div className="flex items-center pt-4">
-                  {/* <Pointer /> */}
+                  <Image
+                    src="/vectors/pointer.svg"
+                    alt="red-pointer"
+                    height={18}
+                    width={18}
+                  />
                   <p className="ml-8">JAVASCRIPT</p>
                 </div>
               </div>

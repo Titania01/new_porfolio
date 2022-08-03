@@ -1,6 +1,6 @@
 import Image from "next/image";
-import React, { useState, Fragment, useRef } from "react";
-import Carousel, { ButtonGroupProps } from "react-multi-carousel";
+import React, { Fragment, useRef } from "react";
+import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Card from "../molecules/ProjectCard";
 
@@ -36,7 +36,7 @@ const FeaturedProjects = ({ work = "" }) => {
       {work ? (
         work
       ) : (
-        <div className="text-lg font-normal">
+        <div className="text-lg font-normal" id="work">
           <p className="text-[#1f2937] dark:text-white">FEATURED PROJECTS</p>
 
           <div className="flex items-center justify-between">
