@@ -27,7 +27,7 @@ const responsive = {
 const FeaturedProjects = ({ work = "" }) => {
   const carouselEl = useRef<any>(null);
 
-  const projectNames = "Testify,Weater Forecast,Zonely,Fruitfy,Lasana".split(
+  const projectNames = "Testify,Weather Forecast,Zonely,Fruitfy,Lasana".split(
     ","
   );
 
@@ -53,16 +53,16 @@ const FeaturedProjects = ({ work = "" }) => {
               >
                 <Image
                   src="/vectors/left-arr.svg"
-                  width={28}
-                  height={28}
+                  width={20}
+                  height={20}
                   alt="arrow"
                 />
               </div>
               <div className="arrow" onClick={() => carouselEl.current?.next()}>
                 <Image
                   src="/vectors/right-arr.svg"
-                  width={28}
-                  height={28}
+                  width={20}
+                  height={20}
                   alt="arrow"
                 />
               </div>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Pointer from "../atoms/Pointer";
 
 const AboutSection = ({ about = "" }) => {
   return (

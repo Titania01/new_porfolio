@@ -16,7 +16,11 @@
         }
 
         span {
-            @apply bg-[#f3eeee];
+            @apply bg-[#f3eeee] h-7 w-20 rounded-lg;
         }
+    }
+
+    .arrow {
+        @apply flex items-center justify-center border border-[#c7c2c2] rounded w-10 h-10 bg-[#c3c3c3]
     }
 }

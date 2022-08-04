@@ -4,3 +4,8 @@
     background-repeat: no-repeat;
     height: 100vh;
 }
+
+.gradient {
+    background: linear-gradient(90deg, #8b5cf6, #ec4899);
+    @apply rounded-2xl h-60 w-3/4 ml-60 mb-20
+}
