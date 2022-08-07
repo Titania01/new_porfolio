@@ -1,11 +1,49 @@
 .fourth-bg {
-    background: url("../../public/images/bg4.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+  background: url("../../public/images/bg4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    background: none;
+  }
 }
 
 .gradient {
-    background: linear-gradient(90deg, #8b5cf6, #ec4899);
-    @apply rounded-2xl h-60 w-3/4 ml-60 mb-20
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  @apply rounded-2xl h-60 w-3/4 ml-60 mb-20;
+}
+
+.enve {
+  background: rgba(255, 255, 255, 0.5);
+  width: 9.5rem;
+  height: 9.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.bg {
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  border: 1px solid #fff;
+  width: 120%;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.last-bg {
+  background: rgba(255, 255, 255, 0.5);
+  height: 3.5rem;
+  width: 30.75rem;
+  border: 1px solid#e5e7eb;
+  border-radius: 8px;
 }

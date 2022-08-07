@@ -1,6 +1,12 @@
 .second-bg {
-    background: url("../../public/images/bg2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+  background: url("../../public/images/bg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    background: none;
+  }
 }
