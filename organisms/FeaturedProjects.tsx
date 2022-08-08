@@ -32,7 +32,7 @@ const FeaturedProjects = ({ work = "" }) => {
   );
 
   return (
-    <div className="pl-[12.9375rem] pt-[12.9375rem] pr-[6.4375rem] third-bg dark:bg-[#1F2937E5] dark:bg-none ">
+    <div className="lg:pl-[12.9375rem] pt-[12.9375rem] lg:pr-[6.4375rem] third-bg dark:bg-[#1F2937E5] dark:bg-none ">
       {work ? (
         work
       ) : (
@@ -46,7 +46,7 @@ const FeaturedProjects = ({ work = "" }) => {
               </h2>
               <Image src="/images/file.png" width={32} height={32} alt="file" />
             </div>
-            <div className="flex items-center pr-[13.75rem]">
+            <div className="flex invisible lg:visible items-center pr-[13.75rem]">
               <div
                 className="mr-6 arrow"
                 onClick={() => carouselEl.current?.previous()}
@@ -71,7 +71,7 @@ const FeaturedProjects = ({ work = "" }) => {
         </div>
       )}
 
-      <div className=" mt-16  h-[35rem]">
+      <div className="mt-16  h-[35rem]">
         <Carousel
           ref={carouselEl}
           swipeable={false}

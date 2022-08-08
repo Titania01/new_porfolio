@@ -6,7 +6,7 @@ export interface IProject {
 
 const Card = ({ projectName }: IProject) => {
   return (
-    <div style={{ marginRight: "3rem" }}>
+    <div style={{ marginRight: "3rem" }} className="flex flex-col lg:flex ">
       <div className="bg-white card dark:bg-[#1F2937]">
         <div className="flex items-center justify-center small-card">
           <Image src="/images/garden.png" alt="" width={88} height={88} />

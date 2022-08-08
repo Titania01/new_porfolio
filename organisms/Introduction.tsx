@@ -13,18 +13,10 @@ const Intro = () => {
             <Avatar className="w-36 h-36" />
           </div>
           <div>
-            <div className="flex items-center text-center  pt-[2rem]">
-              <h2 className="font-bold text-[3rem] text-[#1f2937] dark:text-white">
-                Hi
-              </h2>
-              <div className={``} onClick={() => {}}>
-                <Image src="/vectors/hand.svg" width={32} height={32} alt="" />
-              </div>
-            </div>
-            <h2 className="font-bold text-[3rem] text-[#1f2937] dark:text-white">
-              I’m Badmus Adegbite
+            <h2 className="font-bold lg:text-[3rem] text-base text-[#1f2937] dark:text-white mb-4">
+              Hi I’m Badmus Adegbite
             </h2>
-            <p className="text-[1.25rem] max-w-2xl dark:text-white">
+            <p className="lg:text-[1.25rem] text-sm lg:max-w-2xl md:max-w-2xl max-w-sm dark:text-white">
               Passionate di bidang Frontend Dev dan UI/UX Design. Suka membangun
               antarmuka website yang fast- performace dan well-design
               menggunakan teknologi- teknologi terbaru. Passionate di bidang
@@ -34,7 +26,7 @@ const Intro = () => {
               Design. Suka membangun antarmuka website yang fast- performace dan
               well-design menggunakan teknologi- teknologi terbaru.
             </p>
-            <div className="flex items-center pt-5">
+            <div className="lg:flex lg:flex-row flex-col md:justify-center md:items-center md:flex pt-5">
               <div className="mr-10 deep-blue dark:bg-white">
                 <p className="mr-4 dark:text-[#1f2937]">Let’s work together</p>
                 <Image

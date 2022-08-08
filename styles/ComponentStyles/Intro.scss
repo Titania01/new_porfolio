@@ -13,9 +13,8 @@
         w-[14rem] justify-center border-solid border-2 border-black;
   }
 
-  @media (max-width: 640px) {
-    display: flex;
-    flex-direction: column;
-    background: none;
-  }
+  //   @media (max-width: 640px) {
+  //     display: flex;
+  //     flex-direction: column;
+  //   }
 }
