@@ -10,7 +10,7 @@ const Contact = ({ contact = "" }) => {
         contact
       ) : (
         <div className="fourth-bg dark:bg-[#1F2937E5] dark:bg-none pt-[13.625rem]">
-          <div className="flex items-center justify-between gradient lg:pl-[3rem]">
+          {/* <div className="flex items-center justify-between gradient lg:pl-[3rem]">
             <div>
               <p className="mb-4 text-white">CONTACT</p>
               <p className="mb-4 text-white text-[2rem] font-bold">
@@ -30,9 +30,9 @@ const Contact = ({ contact = "" }) => {
                 width={88}
               />
             </div>
-          </div>
+          </div> */}
 
-          <div className="ml-[16.5rem] mr-[22.5rem] dark:text-white">
+          {/* <div className="ml-[16.5rem] mr-[22.5rem] dark:text-white">
             <p className="pb-4">SOCIAL</p>
             <div className="flex items-center justify-between">
               <div>
@@ -117,7 +117,7 @@ const Contact = ({ contact = "" }) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="mt-32 mb-4 text-center last bg-none">
             <p className=" dark:text-white">
               Copyright © 2021 <b>KEMI ANIKULAPO</b>

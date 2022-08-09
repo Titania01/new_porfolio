@@ -8,6 +8,7 @@ import { portfolioTheme } from "../utils/entity";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const theme = portfolioTheme.use();
+
   useEffect(() => {
     if (theme === "light") {
       document.documentElement.classList.remove("dark");

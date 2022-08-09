@@ -2,11 +2,12 @@ import { navData } from "../atoms/data";
 import Navbar from "../molecules/Navbar";
 import Avatar from "../atoms/Avatar";
 import Image from "next/image";
+import Slidebar from "../molecules/Slidebar";
 
 const Intro = () => {
   return (
     <div className="first-bg">
-      <Navbar {...navData} />
+      <Slidebar {...navData} />
       <div className="dark:bg-[#1F2937E5] dark:bg-none  begee1">
         <div className="pr-[13.5rem] pl-[13.5rem] flex flex-col items-center">
           <div className="mt-24 pics">

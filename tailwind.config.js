@@ -4,8 +4,9 @@ module.exports = {
     "./molecules/**/*.{js,ts,jsx,tsx}",
     "./organisms/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
