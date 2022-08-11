@@ -3,5 +3,3 @@ export const navData = {
     navLinks: "about,work,contact".split(",")
 }
 
-export const aboutData = {
-}

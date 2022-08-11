@@ -1,6 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import { portfolioTheme, setTheme } from "../utils/entity";
 import Image from "next/image";
+import { contactArrayType } from "../utils/types";
+
+export const contactArray: contactArrayType = [
+  {
+    logo: <Image src="/images/vector/github.svg" />,
+  },
+];
 
 const Contact = ({ contact = "" }) => {
   const theme = portfolioTheme.use();

@@ -12,7 +12,7 @@ const Slidebar = ({ name, navLinks = Array(3).fill("link") }: IName) => {
       <h2 className="text-[#1f2937] dark:text-gray-200 invisible lg:visible md:visible font-bold">
         {name}
       </h2>
-      <div className="flex flex-col items-center ">
+      <div className="flex flex-col items-center">
         {navLinks.map((link, linkIndex) => (
           <span
             onClick={() => scrollToElement(link)}
