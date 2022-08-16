@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { aboutData, navData } from "../atoms/data";
+import { navData } from "../atoms/data";
 import Navbar from "../molecules/Navbar";
 import AboutSection from "../organisms/AboutSection";
 import Contact from "../organisms/ContactSection";

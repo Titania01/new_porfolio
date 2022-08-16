@@ -1,11 +1,34 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/no-unescaped-entities */
 import { portfolioTheme, setTheme } from "../utils/entity";
 import Image from "next/image";
-import { contactArrayType } from "../utils/types";
+import Button from "../atoms/Button";
 
-export const contactArray: contactArrayType = [
+const contacts = [
   {
-    logo: <Image src="/images/vector/github.svg" />,
+    logo: "/vectors/github.svg",
+    darkLogo: "/vectors/sun-github.svg",
+    name: "Github",
+    icon: "/vectors/red-arr.svg",
+  },
+  {
+    logo: "/vectors/linkd.svg",
+    darkLogo: "/vectors/linkdin1.svg",
+    name: "Linkedin",
+    icon: "/vectors/red-arr.svg",
+  },
+  {
+    logo: "/vectors/pen.svg",
+    darkLogo: "/vectors/sun-pen.svg",
+    name: "Codepen",
+    icon: "/vectors/red-arr.svg",
+  },
+  {
+    logo: "/vectors/bird.svg",
+    darkLogo: "/vectors/sun-bird.svg",
+
+    name: "Codepen",
+    icon: "/vectors/red-arr.svg",
   },
 ];
 
@@ -17,16 +40,16 @@ const Contact = ({ contact = "" }) => {
         contact
       ) : (
         <div className="fourth-bg dark:bg-[#1F2937E5] dark:bg-none pt-[13.625rem]">
-          {/* <div className="flex items-center justify-between gradient lg:pl-[3rem]">
+          <div className="flex items-center justify-between gradient lg:pl-[3rem]">
             <div>
-              <p className="mb-4 text-white">CONTACT</p>
-              <p className="mb-4 text-white text-[2rem] font-bold">
+              <p className="text-lg text-[#E5E7EB] dark:text-[#1F2937]">
+                CONTACT
+              </p>
+              <p className="mb-6 text-3xl dark:text-[#1F2937] text-white text-[2rem] font-bold">
                 Let's Work Together
               </p>
               <div className="bg">
-                <p className="text-[#1f2937] font-bold text-2xl">
-                  adegbitebidmus@gmail.com
-                </p>
+                <Button opacity font size text="adegbitebidmus@gmail.com" />
               </div>
             </div>
             <div className="enve">
@@ -37,8 +60,48 @@ const Contact = ({ contact = "" }) => {
                 width={88}
               />
             </div>
-          </div> */}
-
+          </div>
+          <div className="p-12">
+            <p className="text-lg mb-2">SOCIALS</p>
+            <div className="flex flex-wrap gap-10">
+              {contacts.map((contact: any, index: number) => (
+                <a
+                  className="w-[36.75rem]"
+                  href={`${
+                    index === 0
+                      ? "https://github.com/Titania01"
+                      : index === 1
+                      ? "https://www.linkedin.com/in/badmus-adegbite-905747166/"
+                      : index === 2
+                      ? "https://codepen.io/titania01"
+                      : "https://twitter.com/BadmusAdegbite"
+                  }`}
+                  rel="noreferrer"
+                  target="_blank"
+                  key={`index-${index}`}
+                >
+                  <Button
+                    logo
+                    icon
+                    darkLogo={
+                      theme === "light" ? (
+                        <Image src={contact.logo} width={18} height={18} />
+                      ) : (
+                        <Image src={contact.darkLogo} width={18} height={18} />
+                      )
+                    }
+                    darkIcon={
+                      <Image src={contact.icon} width={18} height={18} />
+                    }
+                    width
+                    font
+                    size
+                    text={contact.name}
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
           {/* <div className="ml-[16.5rem] mr-[22.5rem] dark:text-white">
             <p className="pb-4">SOCIAL</p>
             <div className="flex items-center justify-between">

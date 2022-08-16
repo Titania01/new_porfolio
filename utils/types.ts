@@ -12,9 +12,26 @@ export interface ISocialsSvg extends SVGProps<SVGSVGElement> {
     theme:ITheme
 }
 
-export interface contactArrayType {
+export interface ContactArrayType {
     name: string;
-    icon: ImageProps;
-    logo: ImageProps;
-    darkLogo: ImageProps
+    icon: HTMLOrSVGImageElement
+    logo: HTMLOrSVGImageElement
+    darkLogo: HTMLOrSVGImageElement
+}
+
+export interface ButtonTypes {
+    logo?: any
+    darkLogo?: any
+    icon?: any
+    darkIcon?: any
+    bg?: string
+    neutral?:string
+    sm?:string
+    opacity?: boolean
+    size?: boolean
+    text?: string
+    font: boolean
+    sFont?: string
+    black?: string
+    width?: any
 }
