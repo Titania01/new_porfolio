@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/no-unescaped-entities */
-import { portfolioTheme, setTheme } from "../utils/entity";
+import { portfolioTheme } from "../utils/entity";
 import Image from "next/image";
 import Button from "../atoms/Button";
 
@@ -26,8 +26,7 @@ const contacts = [
   {
     logo: "/vectors/bird.svg",
     darkLogo: "/vectors/sun-bird.svg",
-
-    name: "Codepen",
+    name: "Twitter",
     icon: "/vectors/red-arr.svg",
   },
 ];
@@ -39,7 +38,7 @@ const Contact = ({ contact = "" }) => {
       {contact ? (
         contact
       ) : (
-        <div className="fourth-bg dark:bg-[#1F2937E5] dark:bg-none pt-[13.625rem]">
+        <div className="fourth-bg dark:bg-[#1F2937E5] dark:bg-none pt-28">
           <div className="flex items-center justify-between gradient lg:pl-[3rem]">
             <div>
               <p className="text-lg text-[#E5E7EB] dark:text-[#1F2937]">
@@ -49,7 +48,7 @@ const Contact = ({ contact = "" }) => {
                 Let's Work Together
               </p>
               <div className="bg">
-                <Button opacity font size text="adegbitebidmus@gmail.com" />
+                <Button font size text="adegbitebidmus@gmail.com" />
               </div>
             </div>
             <div className="enve">
@@ -61,45 +60,51 @@ const Contact = ({ contact = "" }) => {
               />
             </div>
           </div>
-          <div className="p-12">
-            <p className="text-lg mb-2">SOCIALS</p>
-            <div className="flex flex-wrap gap-10">
-              {contacts.map((contact: any, index: number) => (
-                <a
-                  className="w-[36.75rem]"
-                  href={`${
-                    index === 0
-                      ? "https://github.com/Titania01"
-                      : index === 1
-                      ? "https://www.linkedin.com/in/badmus-adegbite-905747166/"
-                      : index === 2
-                      ? "https://codepen.io/titania01"
-                      : "https://twitter.com/BadmusAdegbite"
-                  }`}
-                  rel="noreferrer"
-                  target="_blank"
-                  key={`index-${index}`}
-                >
-                  <Button
-                    logo
-                    icon
-                    darkLogo={
-                      theme === "light" ? (
-                        <Image src={contact.logo} width={18} height={18} />
-                      ) : (
-                        <Image src={contact.darkLogo} width={18} height={18} />
-                      )
-                    }
-                    darkIcon={
-                      <Image src={contact.icon} width={18} height={18} />
-                    }
-                    width
-                    font
-                    size
-                    text={contact.name}
-                  />
-                </a>
-              ))}
+          <div className="mx-[12.94rem]">
+            <div className="p-12">
+              <p className="text-lg mb-2">SOCIALS</p>
+              <div className="flex flex-wrap gap-10">
+                {contacts.map((contact: any, index: number) => (
+                  <a
+                    className="w-[36.75rem]"
+                    href={`${
+                      index === 0
+                        ? "https://github.com/Titania01"
+                        : index === 1
+                        ? "https://www.linkedin.com/in/badmus-adegbite-905747166/"
+                        : index === 2
+                        ? "https://codepen.io/titania01"
+                        : "https://twitter.com/BadmusAdegbite"
+                    }`}
+                    rel="noreferrer"
+                    target="_blank"
+                    key={`index-${index}`}
+                  >
+                    <Button
+                      text={contact.name}
+                      logo
+                      icon
+                      width
+                      font
+                      size
+                      darkLogo={
+                        theme === "light" ? (
+                          <Image src={contact.logo} width={18} height={18} />
+                        ) : (
+                          <Image
+                            src={contact.darkLogo}
+                            width={18}
+                            height={18}
+                          />
+                        )
+                      }
+                      darkIcon={
+                        <Image src={contact.icon} width={18} height={18} />
+                      }
+                    />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
           {/* <div className="ml-[16.5rem] mr-[22.5rem] dark:text-white">

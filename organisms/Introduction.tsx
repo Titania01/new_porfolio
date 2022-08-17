@@ -3,6 +3,9 @@ import Navbar from "../molecules/Navbar";
 import Avatar from "../atoms/Avatar";
 import Image from "next/image";
 import { portfolioTheme } from "../utils/entity";
+import UpArrow from "../public/vectors/UpArrow";
+import DownArrow from "../public/vectors/DownArrow";
+import Button from "../atoms/Button";
 // import Slidebar from "../molecules/Slidebar";
 
 const Intro = () => {
@@ -10,7 +13,7 @@ const Intro = () => {
   return (
     <div className="first-bg">
       <Navbar {...navData} />
-      <div className="dark:bg-[#1F2937E5] dark:bg-none  begee1">
+      <div className="dark:bg-[#1F2937E5] dark:bg-none begee1">
         <div className="flex flex-col items-center">
           <div className="mt-24 pics">
             <Avatar className="w-36 h-36" />
@@ -29,7 +32,41 @@ const Intro = () => {
               responsive design. An excellent team player and an ingenious
               thinker. I lead an adventurous lifestyle when not working.
             </p>
-            <div className="lg:flex lg:flex-row flex-col md:justify-center md:items-center md:flex pt-5">
+
+            <div className="flex">
+              <a href="#contact" className="w-[235px]">
+                <Button
+                  icon
+                  darkIcon={
+                    theme === "light" ? (
+                      <UpArrow />
+                    ) : (
+                      <UpArrow color="#1F2937" />
+                    )
+                  }
+                  black
+                  text="Let's work together"
+                  font={false}
+                />
+              </a>
+              <a href="#project" className="w-[260px]">
+                <Button
+                  icon
+                  bg
+                  darkIcon={
+                    theme === "light" ? (
+                      <DownArrow />
+                    ) : (
+                      <DownArrow color="#F9FAFB" />
+                    )
+                  }
+                  text="See some of my works"
+                  font={false}
+                />
+              </a>
+            </div>
+
+            {/* <div className="lg:flex lg:flex-row flex-col md:justify-center md:items-center md:flex pt-5">
               <div className="mr-10 deep-blue dark:bg-white">
                 <p className="mr-4 dark:text-[#1f2937]">
                   Let&apos;s work together
@@ -50,7 +87,7 @@ const Intro = () => {
                   alt=""
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

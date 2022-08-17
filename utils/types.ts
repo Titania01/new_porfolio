@@ -24,14 +24,14 @@ export interface ButtonTypes {
     darkLogo?: any
     icon?: any
     darkIcon?: any
-    bg?: string
-    neutral?:string
-    sm?:string
-    opacity?: boolean
-    size?: boolean
+    bg?: any
+    neutral?: any
+    sm?:any
+    opacity?: any
+    size?: any
     text?: string
-    font: boolean
-    sFont?: string
-    black?: string
+    font: any
+    sFont?: any
+    black?: any
     width?: any
 }
