@@ -44,74 +44,46 @@ const AboutSection = ({ about = "" }) => {
               : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet nunc ultrices ac mauris, quis erat consequat odio. Pretium aliquet nunc eget consectetur diam felis justo. Tempor ornare   nunc facilisi amet. Sed dui orci, ut pharetra. Vulputate id lectus laoreet sagittis non. Pharetra purus quam mauris malesuada etiam nullam. Ultrices nec in massa consequat erat iaculis leo."}
           </p>
 
-          {/* <div className="lg:grid lg:grid-cols-4 mt-12 dark:text-white px-4">
-            <div className="mb-8">
-              <h2 className="text-[#1f2937] dark:text-white font-bold text-[1.5rem]">
-                Languages
-              </h2>
-              <div className="flex items-center pt-4">
-                <Image
-                  src="/vectors/pointer.svg"
-                  alt="red-pointer"
-                  height={18}
-                  width={18}
-                />
-                <p className="ml-8">HTML</p>
-              </div>
-              <div className="flex items-center pt-4">
-                <Image
-                  src="/vectors/pointer.svg"
-                  alt="red-pointer"
-                  height={18}
-                  width={18}
-                />
-                <p className="ml-8">CSS</p>
-              </div>
-              <div className="flex items-center pt-4">
-                <Image
-                  src="/vectors/pointer.svg"
-                  alt="red-pointer"
-                  height={18}
-                  width={18}
-                />
-                <p className="ml-8">JAVASCRIPT</p>
-              </div>
+          <div className="flex mt-12">
+            <div className="mr-6">
+              <p className="font-bold text-2xl mb-6">Languages</p>
+              {languages.map((lang, indx) => (
+                <div
+                  className="leading-8 flex items-center ml-2"
+                  key={`langindex-${indx}`}
+                >
+                  <div className="mr-3">
+                    <Image
+                      src="/vectors/pointer.svg"
+                      alt="red-pointer"
+                      height={18}
+                      width={18}
+                    />
+                  </div>
+                  {lang.name}
+                </div>
+              ))}
             </div>
-            <div>
-              <div>
-                <h2 className="text-[#1f2937] dark:text-white font-bold text-[1.5rem]">
-                  Technologies
-                </h2>
-                <div className="flex items-center pt-4">
-                  <Image
-                    src="/vectors/pointer.svg"
-                    alt="red-pointer"
-                    height={18}
-                    width={18}
-                  />
-                  <p className="ml-8">REACT</p>
+            <div className="ml-6">
+              <p className="font-bold text-2xl mb-6">Technologies</p>
+              {techStack.map((stack, indx) => (
+                <div
+                  className="leading-8 flex items-center ml-2"
+                  key={`langindex-${indx}`}
+                >
+                  <div className="mr-3">
+                    <Image
+                      src="/vectors/pointer.svg"
+                      alt="red-pointer"
+                      height={18}
+                      width={18}
+                    />
+                  </div>
+                  {stack.name}
                 </div>
-                <div className="flex items-center pt-4">
-                  <Image
-                    src="/vectors/pointer.svg"
-                    alt="red-pointer"
-                    height={18}
-                    width={18}
-                  />
-                  <p className="ml-8">NODEJS</p>
-                </div>
-                <div className="flex items-center pt-4">
-                  <Image
-                    src="/vectors/pointer.svg"
-                    alt="red-pointer"
-                    height={18}
-                    width={18}
-                  />
-                  <p className="ml-8">EXPRESS</p>
-                </div>
-              </div>
+              ))}
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
