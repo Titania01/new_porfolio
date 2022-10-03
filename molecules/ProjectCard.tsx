@@ -4,6 +4,8 @@ export interface IProject {
   projectName?: string;
 }
 
+const buttonText = [];
+
 const Card = ({ projectName }: IProject) => {
   return (
     <div style={{ marginRight: "3rem" }} className="flex flex-col lg:flex ">

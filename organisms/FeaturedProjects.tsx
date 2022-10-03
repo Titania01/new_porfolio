@@ -39,7 +39,7 @@ const FeaturedProjects = ({ work = "" }) => {
         <div className="text-lg font-normal" id="work">
           <p className="text-[#1f2937] dark:text-white">FEATURED PROJECTS</p>
 
-          {/* <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between">
             <div className="flex items-center">
               <h2 className="font-bold text-[2.5rem] dark:text-white text-[#1f2937] pr-8">
                 Stuff Ive Worked On
@@ -67,11 +67,11 @@ const FeaturedProjects = ({ work = "" }) => {
                 />
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       )}
 
-      {/* <div className="mt-16  h-[35rem]">
+      <div className="mt-16  h-[35rem]">
         <Carousel
           ref={carouselEl}
           swipeable={false}
@@ -90,7 +90,7 @@ const FeaturedProjects = ({ work = "" }) => {
             </Fragment>
           ))}
         </Carousel>
-      </div> */}
+      </div>
     </div>
   );
 };
