@@ -6,6 +6,7 @@ import { portfolioTheme } from "../utils/entity";
 import UpArrow from "../public/vectors/UpArrow";
 import DownArrow from "../public/vectors/DownArrow";
 import Button from "../atoms/Button";
+import profilePic from "../public/image/profilePic.jpg";
 // import Slidebar from "../molecules/Slidebar";
 
 const Intro = () => {
@@ -14,10 +15,7 @@ const Intro = () => {
     <div className="first-bg">
       <Navbar {...navData} />
       <div className="dark:bg-[#1F2937E5] dark:bg-none begee1">
-        <div className="flex flex-col items-center">
-          <div className="mt-24 pics">
-            <Avatar className="w-36 h-36" />
-          </div>
+        <div className="flex mx-auto container justify-between items-center">
           <div className="">
             <p className="text-base font-medium leading-snug ml-[12rem]">
               Hi I&apos;m
@@ -88,6 +86,9 @@ const Intro = () => {
                 />
               </div>
             </div> */}
+          </div>
+          <div className="profile-pic">
+            <Image src={profilePic} className="rounded-full" alt="" />
           </div>
         </div>
       </div>

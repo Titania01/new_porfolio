@@ -8,23 +8,23 @@ const Navbar = ({ name, navLinks = Array(3).fill("link") }: IName) => {
   const theme = portfolioTheme.use();
 
   return (
-    <nav className="relative flex mx-auto container p-6">
+    <nav className="relative mx-auto container p-6">
       <div className="flex items-center justify-between">
-        <div className="flex items-center space-x-6 lg:gap-8">
-          <h2 className="text-[#1f2937] dark:text-gray-200 font-bold">
-            {name}
-          </h2>
+        <h2 className="text-[#1f2937] dark:text-gray-200 cursor-pointer font-bold">
+          {name}
+        </h2>
+        <div className="hidden md:flex  space-x-6">
           {navLinks.map((link, linkIndex) => (
             <span
               onClick={() => scrollToElement(link)}
               key={`nav-link-${linkIndex}`}
-              className="p-2 capitalize cursor-pointer select-none"
+              className="p-2 capitalize cursor-pointer hover:-rotate-12 select-none"
             >
               {link}
             </span>
           ))}
         </div>
-        <div className="p-2" onClick={setTheme}>
+        <div className="p-2 cursor-pointer" onClick={setTheme}>
           <Image
             className=""
             width={32}
