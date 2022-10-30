@@ -5,16 +5,11 @@
   height: 100vh;
 
   .deep-blue {
-    @apply bg-[#1f2937] h-12 text-white flex items-center
+    @apply bg-[#1f2937] dark:bg-[#1F2937E5] h-12 text-white flex items-center
          rounded w-[14rem] justify-center;
   }
   .white {
     @apply bg-white h-12 text-black flex items-center rounded
         w-[14rem] justify-center border-solid border-2 border-black;
   }
-
-  //   @media (max-width: 640px) {
-  //     display: flex;
-  //     flex-direction: column;
-  //   }
 }

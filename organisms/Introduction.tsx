@@ -1,48 +1,52 @@
 import { navData } from "../atoms/data";
 import Navbar from "../molecules/Navbar";
-import Avatar from "../atoms/Avatar";
 import Image from "next/image";
 import { portfolioTheme } from "../utils/entity";
 import UpArrow from "../public/vectors/UpArrow";
 import DownArrow from "../public/vectors/DownArrow";
 import Button from "../atoms/Button";
-import profilePic from "../public/image/profilePic.jpg";
-// import Slidebar from "../molecules/Slidebar";
+import hands from "../public/vectors/hand.svg";
 
 const Intro = () => {
   const theme = portfolioTheme.use();
   return (
-    <div className="first-bg">
+    <div className="first-bg dark:bg-[#1F2937E5] dark:text-[#F9FAFB]">
       <Navbar {...navData} />
-      <div className="dark:bg-[#1F2937E5] dark:bg-none begee1">
-        <div className="flex mx-auto container justify-between items-center">
+      <div className="dark:bg-[#1F2937E5] begee1">
+        <div className="flex mx-auto container mt-[8.5rem] justify-between items-center">
           <div className="">
-            <p className="text-base font-medium leading-snug ml-[12rem]">
-              Hi I&apos;m
-            </p>
+            <div className="flex">
+              <p className="text-5xl font-medium leading-snug">Hi I&apos;m</p>
+              <Image
+                src="/vectors/hand.svg"
+                width={50}
+                height={50}
+                alt="hand-meme"
+              />
+            </div>
             <h2 className="text-5xl font-bold text-[#1F2937] leading-snug">
               Badmus Adegbite
             </h2>
-            <p className="text-xl max-w-lg mt-8 mb-12">
-              Apt and resourceful Frontend software engineer with 2 years of
+            <p className="text-xl  max-w-xl mt-8 mb-12">
+              Apt and resourceful Frontend Software Engineer with 2 years of
               experience designing, developing, and managing apps and internal
               frameworks. Specializes in ReactJS, Next Js, Typescript, and
               responsive design. An excellent team player and an ingenious
               thinker. I lead an adventurous lifestyle when not working.
             </p>
 
-            <div className="flex">
+            <div className="flex gap-3">
               <a href="#contact" className="w-[235px]">
                 <Button
                   icon
+                  bg
                   darkIcon={
                     theme === "light" ? (
                       <UpArrow />
                     ) : (
-                      <UpArrow color="#1F2937" />
+                      <UpArrow color="#F9FAFB" />
                     )
                   }
-                  black
                   text="Let's work together"
                   font={false}
                 />
@@ -88,7 +92,13 @@ const Intro = () => {
             </div> */}
           </div>
           <div className="profile-pic">
-            <Image src={profilePic} className="rounded-full" alt="" />
+            <Image
+              src="https://media1.giphy.com/media/u2pmTWUi0MXjyrMaVj/giphy.gif?cid=ecf05e472hvtvsxcati9968n75dur41zqfpcw7t4iov2gvo3&rid=giphy.gif&ct=g"
+              alt="titania01"
+              height="400"
+              width="400"
+              className="rounded-full"
+            />
           </div>
         </div>
       </div>

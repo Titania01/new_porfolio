@@ -8,7 +8,7 @@ const Navbar = ({ name, navLinks = Array(3).fill("link") }: IName) => {
   const theme = portfolioTheme.use();
 
   return (
-    <nav className="relative mx-auto container p-6">
+    <nav className="relative dark:bg-[#1F2937E5] mx-auto container p-6">
       <div className="flex items-center justify-between">
         <h2 className="text-[#1f2937] dark:text-gray-200 cursor-pointer font-bold">
           {name}
