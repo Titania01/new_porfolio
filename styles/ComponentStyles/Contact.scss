@@ -3,17 +3,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-
-  @media (max-width: 640px) {
-    display: flex;
-    flex-direction: column;
-    background: none;
-  }
+  // width: 70%;
+  margin: auto;
 }
 
 .gradient {
   background: linear-gradient(90deg, #8b5cf6, #ec4899);
-  @apply rounded-2xl h-60 w-3/4 ml-60 mb-20;
+  @apply rounded-2xl h-60 w-[80%]  mx-auto mb-20;
 }
 
 .enve {
@@ -43,7 +39,7 @@
 .last-bg {
   background: rgba(255, 255, 255, 0.5);
   height: 3.5rem;
-  width: 30.75rem;
+  width: 100%;
   border: 1px solid#e5e7eb;
   border-radius: 8px;
 }

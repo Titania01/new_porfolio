@@ -1,4 +1,3 @@
-import { ImageProps } from "next/image";
 import { SVGProps } from "react";
 
 export type ITheme = 'light' | 'dark'
@@ -34,4 +33,12 @@ export interface ButtonTypes {
     sFont?: any
     black?: any
     width?: any
+}
+
+export interface ProjectArrayTypes {
+    img: HTMLImageElement,
+    alt: string,
+    desc: string,
+    techStack: string[],
+    href: any
 }

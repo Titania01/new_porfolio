@@ -5,14 +5,13 @@ import { portfolioTheme } from "../utils/entity";
 import UpArrow from "../public/vectors/UpArrow";
 import DownArrow from "../public/vectors/DownArrow";
 import Button from "../atoms/Button";
-import hands from "../public/vectors/hand.svg";
 
 const Intro = () => {
   const theme = portfolioTheme.use();
   return (
     <div className="first-bg dark:bg-[#1F2937E5] dark:text-[#F9FAFB]">
       <Navbar {...navData} />
-      <div className="dark:bg-[#1F2937E5] begee1">
+      <div className="dark:bg-[#1F2937E5] flex-col-reverse md:flex-row md:justify-between items-center begee1">
         <div className="flex mx-auto container mt-[8.5rem] justify-between items-center">
           <div className="">
             <div className="flex">
@@ -39,7 +38,6 @@ const Intro = () => {
               <a href="#contact" className="w-[235px]">
                 <Button
                   icon
-                  bg
                   darkIcon={
                     theme === "light" ? (
                       <UpArrow />
@@ -54,6 +52,7 @@ const Intro = () => {
               <a href="#project" className="w-[260px]">
                 <Button
                   icon
+                  neutral
                   bg
                   darkIcon={
                     theme === "light" ? (
@@ -67,29 +66,6 @@ const Intro = () => {
                 />
               </a>
             </div>
-
-            {/* <div className="lg:flex lg:flex-row flex-col md:justify-center md:items-center md:flex pt-5">
-              <div className="mr-10 deep-blue dark:bg-white">
-                <p className="mr-4 dark:text-[#1f2937]">
-                  Let&apos;s work together
-                </p>
-                <Image
-                  src="/vectors/arr-right.svg"
-                  width={18}
-                  height={18}
-                  alt=""
-                />
-              </div>
-              <div className="white">
-                <p className="mr-4">See some of my works</p>
-                <Image
-                  src="/vectors/arr-down.svg"
-                  width={18}
-                  height={18}
-                  alt=""
-                />
-              </div>
-            </div> */}
           </div>
           <div className="profile-pic">
             <Image

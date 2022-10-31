@@ -39,7 +39,7 @@ const Contact = ({ contact = "" }) => {
         contact
       ) : (
         <div className="fourth-bg dark:bg-[#1F2937E5] dark:bg-none pt-28">
-          <div className="flex items-center justify-between gradient lg:pl-[3rem]">
+          <div className="flex items-center justify-between gradient md:pl-[3rem]">
             <div>
               <p className="text-lg text-[#E5E7EB] dark:text-[#1F2937]">
                 CONTACT
@@ -48,7 +48,13 @@ const Contact = ({ contact = "" }) => {
                 Let's Work Together
               </p>
               <div className="bg">
-                <Button font size text="adegbitebidmus@gmail.com" />
+                <a
+                  href="mailto:adegbitebidmus@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button font size text="adegbitebidmus@gmail.com" />
+                </a>
               </div>
             </div>
             <div className="enve">
@@ -62,8 +68,7 @@ const Contact = ({ contact = "" }) => {
           </div>
           <div className="mx-[12.94rem]">
             <div className="p-12">
-              <p className="text-lg mb-2">SOCIALS</p>
-              <div className="flex flex-wrap gap-10">
+              {/* <div className="flex flex-wrap gap-10">
                 {contacts.map((contact: any, index: number) => (
                   <a
                     className="w-[36.75rem]"
@@ -84,7 +89,6 @@ const Contact = ({ contact = "" }) => {
                       text={contact.name}
                       logo
                       icon
-                      width
                       font
                       size
                       darkLogo={
@@ -104,14 +108,19 @@ const Contact = ({ contact = "" }) => {
                     />
                   </a>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
-          {/* <div className="ml-[16.5rem] mr-[22.5rem] dark:text-white">
-            <p className="pb-4">SOCIAL</p>
-            <div className="flex items-center justify-between">
-              <div>
-                <div className="flex items-center pl-4 last-bg">
+
+          <div className=" w-[80%] mx-auto dark:text-white">
+            <p className="pb-4 textl">SOCIALS</p>
+            <div className="grid grid-cols-none md:grid-cols-2 gap-8">
+              <a
+                href="https://github.com/Titania01"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <div className="flex items-center cursor-pointer px-4 last-bg">
                   <Image
                     src={`/vectors/${
                       theme == `light` ? "github" : "sun-github"
@@ -120,7 +129,8 @@ const Contact = ({ contact = "" }) => {
                     height={32}
                     width={32}
                   />
-                  <p className="pl-8 pr-[20rem]">Github</p>
+                  <p className="pl-8">Github</p>
+                  <span className="flex-grow" />
                   <Image
                     src="/vectors/red-arr.svg"
                     alt="red"
@@ -128,9 +138,13 @@ const Contact = ({ contact = "" }) => {
                     height={18}
                   />
                 </div>
-              </div>
-              <div>
-                <div className="flex items-center pl-4 last-bg">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/badmus-adegbite-905747166/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <div className="flex items-center cursor-pointer px-4 last-bg">
                   <Image
                     alt="linkedIn"
                     height={32}
@@ -139,7 +153,9 @@ const Contact = ({ contact = "" }) => {
                       theme == `light` ? "linkd" : "linkdin1"
                     }.svg`}
                   />
-                  <p className="pl-8 pr-[20rem]">Linkedin</p>
+                  <p className="pl-8">Linkedin</p>
+                  <span className="flex-grow" />
+
                   <Image
                     src="/vectors/red-arr.svg"
                     alt="red"
@@ -147,53 +163,60 @@ const Contact = ({ contact = "" }) => {
                     height={18}
                   />
                 </div>
-              </div>
-            </div>
+              </a>
 
-            <div>
-              <div className="flex items-center justify-between mt-10">
-                <div>
-                  <div className="flex items-center pl-4 last-bg">
-                    <Image
-                      src={`/vectors/${
-                        theme == `light` ? "pen" : "sun-pen"
-                      }.svg`}
-                      alt="codepen"
-                      height={32}
-                      width={32}
-                    />
-                    <p className="pl-8 pr-[20rem]">Codepen</p>
-                    <Image
-                      src="/vectors/red-arr.svg"
-                      alt="red"
-                      width={18}
-                      height={18}
-                    />
-                  </div>
+              <a
+                href="https://codepen.io/titania01"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <div className="flex cursor-pointer items-center px-4 last-bg">
+                  <Image
+                    src={`/vectors/${theme == `light` ? "pen" : "sun-pen"}.svg`}
+                    alt="codepen"
+                    height={32}
+                    width={32}
+                  />
+                  <p className="pl-8">Codepen</p>
+                  <span className="flex-grow" />
+
+                  <Image
+                    src="/vectors/red-arr.svg"
+                    alt="red"
+                    width={18}
+                    height={18}
+                  />
                 </div>
-                <div className="flex items-center pl-4 last-bg">
-                  <div className="flex">
-                    <Image
-                      src={`/vectors/${
-                        theme == `light` ? "bird" : "sun-bird"
-                      }.svg`}
-                      alt="twiter"
-                      height={32}
-                      width={32}
-                    />
-                    <p className="pl-8 pr-[20rem]">Twitter</p>
-                    <Image
-                      src="/vectors/red-arr.svg"
-                      alt="red"
-                      width={18}
-                      height={18}
-                    />
-                  </div>
+              </a>
+
+              <a
+                href="https://twitter.com/BadmusAdegbite"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <div className="flex items-center px-4 last-bg">
+                  <Image
+                    src={`/vectors/${
+                      theme == `light` ? "bird" : "sun-bird"
+                    }.svg`}
+                    alt="twiter"
+                    height={32}
+                    width={32}
+                  />
+                  <p className="pl-8">Twitter</p>
+                  <span className="flex-grow" />
+
+                  <Image
+                    src="/vectors/red-arr.svg"
+                    alt="red"
+                    width={18}
+                    height={18}
+                  />
                 </div>
-              </div>
+              </a>
             </div>
-          </div> */}
-          <div className="mt-32 mb-4 text-center last bg-none">
+          </div>
+          <div className="mt-32 text-center">
             <p className=" dark:text-white">
               Copyright © 2021 <b>KEMI ANIKULAPO</b>
             </p>

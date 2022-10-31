@@ -25,13 +25,13 @@ const Navbar = ({ name, navLinks = Array(3).fill("link") }: IName) => {
           ))}
         </div>
         <div className="p-2 cursor-pointer" onClick={setTheme}>
-          <Image
+          {/* <Image
             className=""
             width={32}
             height={32}
             alt="theme-icon"
             src={`/vectors/${theme}--icon.svg`}
-          />
+          /> */}
         </div>
       </div>
     </nav>

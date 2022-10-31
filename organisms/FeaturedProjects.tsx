@@ -2,11 +2,60 @@ import Image from "next/image";
 import React, { Fragment, useRef } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Card from "../molecules/ProjectCard";
+// import Card from "../molecules/ProjectCard";
+
+import karasey from "../public/images/karaseyPic.png";
+import hayak from "../public/images/hayakPic.png";
+import kovid from "../public/images/kovidPic.png";
+import lawparlance from "../public/images/lawparlancePic.png";
+import admindashboard from "../public/images/admindashboardPic.png";
+
+const projectArray = [
+  {
+    img: karasey,
+    alt: "project-pic",
+    desc: "karasey is a research awareness website that fund scientific researches and other academic research",
+    techStack: [
+      "NextJs",
+      "TailwindCss",
+      "Node",
+      "Firebase",
+      "Express",
+      "MongoDB",
+    ],
+    href: "https://karasey.com/en",
+  },
+  {
+    img: hayak,
+    alt: "project-pic",
+    desc: "hayak is a Saudi Arabian website where people can book a tour to traditional and historical places",
+    techStack: ["NextJs", "TailwindCss", "Node", "Typescript"],
+    href: "https://hayak.sa/en",
+  },
+  {
+    img: lawparlance,
+    alt: "project-pic",
+    desc: "Law Parlance is legal website that contains a lot of e-books on legal practice, resources, and notes. You can read, take notes and download any resources on it",
+    techStack: ["ReactJs", "Paas", "Node"],
+    href: "https://www.lawparlance.com/",
+  },
+  {
+    img: kovid,
+    alt: "project-pic",
+    desc: "This is a pet project that gives all data about menace of Covid-19 in all 36 states including FCT in Nigeria",
+    techStack: ["React", "Typescript", "Redux"],
+    href: "https://vermillion-trifle-231875.netlify.app/",
+  },
+  {
+    img: admindashboard,
+    alt: "project-pic",
+    desc: "This is a side project to hone my skill on styling with MUI and dashboard layout with react-router-dom",
+    techStack: ["React", "ContextAPI", "MUI", "Git"],
+  },
+];
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 3,
   },
@@ -15,11 +64,11 @@ const responsive = {
     items: 3,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
+    breakpoint: { max: 1024, min: 601 },
+    items: 1.5,
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 600, min: 0 },
     items: 1,
   },
 };
@@ -27,7 +76,7 @@ const responsive = {
 const FeaturedProjects = ({ work = "" }) => {
   const carouselEl = useRef<any>(null);
 
-  const projectNames = "Testify,Weather Forecast,Zonely,Fruitfy,Lasana".split(
+  const projectNames = "Koprative,Weather Forecast,Zonely,Fruitfy,Lasana".split(
     ","
   );
 
@@ -45,11 +94,11 @@ const FeaturedProjects = ({ work = "" }) => {
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <h2 className="font-bold text-[2.5rem] dark:text-white text-[#1f2937] pr-8">
-                Stuff Ive Worked On
+                Stuffs I&apos;ve Worked On
               </h2>
               <Image src="/images/file.png" width={32} height={32} alt="file" />
             </div>
-            <div className="flex invisible lg:visible items-center pr-[13.75rem]">
+            <div className="flex items-center md:pr-[13.75rem]">
               <div
                 className="mr-6 arrow"
                 onClick={() => carouselEl.current?.previous()}
@@ -74,22 +123,24 @@ const FeaturedProjects = ({ work = "" }) => {
         </div>
       )}
 
-      <div className="mt-16  h-[35rem]">
+      <div className="mt-16 ">
         <Carousel
           ref={carouselEl}
-          swipeable={false}
-          draggable={false}
+          swipeable={true}
+          draggable={true}
           responsive={responsive}
           customTransition="all .5"
           transitionDuration={500}
           itemClass="margin-right"
           showDots={false}
           arrows={false}
-          // slidesToSlide={2}
+          slidesToSlide={0}
+          ssr={true}
+          deviceType="laptop"
         >
-          {projectNames.map((item, itemIndex) => (
+          {projectArray.map((item, itemIndex) => (
             <Fragment key={`project-index-${itemIndex}`}>
-              <Card projectName={item} />
+              {/* <Card projectName={item} /> */}
             </Fragment>
           ))}
         </Carousel>
