@@ -27,7 +27,7 @@ const Intro = () => {
             <h2 className="text-3xl md:text-5xl mx-2 font-bold text-[#1F2937] leading-snug">
               Badmus Adegbite
             </h2>
-            <p className="mx-2 md:text-xl max-w-xl mt-8 mb-12">
+            <p className="mx-2 md:text-xl max-w-xl mt-8 mb-4 md:mb-12">
               Apt and resourceful Frontend Software Engineer with 2 years of
               experience designing, developing, and managing apps and internal
               frameworks. Specializes in ReactJS, Next Js, Typescript, and
