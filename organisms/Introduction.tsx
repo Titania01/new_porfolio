@@ -35,7 +35,7 @@ const Intro = () => {
               thinker. I lead an adventurous lifestyle when not working.
             </p>
 
-            <div className="mx-2 flex md:flex-row flex-col gap-3">
+            <div className="mx-2 flex md:flex-row flex-col space-y-10 md:gap-3">
               <a href="#contact" className="w-[235px]">
                 <Button
                   icon
@@ -72,8 +72,8 @@ const Intro = () => {
             <Image
               src="https://media1.giphy.com/media/u2pmTWUi0MXjyrMaVj/giphy.gif?cid=ecf05e472hvtvsxcati9968n75dur41zqfpcw7t4iov2gvo3&rid=giphy.gif&ct=g"
               alt="titania01"
-              height="400"
-              width="400"
+              height="350"
+              width="350"
               className="rounded-full"
             />
           </div>
