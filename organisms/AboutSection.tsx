@@ -32,7 +32,7 @@ const techStack = [
 const AboutSection = ({ about = "" }) => {
   return (
     <div className="second-bg flex justify-center" id="about">
-      <div className=" pt-[16.75rem] mx-4 dark:bg-[#1F2937E5] dark:bg-none">
+      <div className=" pt-[16.75rem] mx-4 dark:bg-[#1F2937E5] mt-[10rem] mt:mb-0 dark:bg-none">
         <div>
           <p className="dark:text-white">ABOUT ME</p>
           <p className="font-bold text-[2.5rem] text-[#1f2037] dark:text-white">

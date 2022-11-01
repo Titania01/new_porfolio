@@ -35,7 +35,7 @@ const Intro = () => {
               thinker. I lead an adventurous lifestyle when not working.
             </p>
 
-            <div className="mx-2 flex md:flex-row flex-col mb-[5rem] md:mb-0 md:gap-3">
+            <div className="mx-2 flex md:flex-row flex-col gap-3">
               <a href="#contact" className="w-[235px]">
                 <Button
                   icon
