@@ -12,7 +12,7 @@ const Intro = () => {
     <div className="first-bg dark:bg-[#1F2937E5] dark:text-[#F9FAFB]">
       <Navbar {...navData} />
       <div className="dark:bg-[#1F2937E5] begee1">
-        <div className="flex mx-4 md:mx-auto flex-col-reverse md:flex-row md:justify-between container mt-[8.5rem] justify-between items-center">
+        <div className="flex  mx-auto flex-col-reverse md:flex-row md:justify-between container mt-[8.5rem] justify-between items-center">
           <div className="">
             <div className="flex mx-2">
               <p className="text-5xl font-medium leading-snug">Hi I&apos;m</p>
@@ -24,7 +24,7 @@ const Intro = () => {
                 className=""
               />
             </div>
-            <h2 className="text-5xl mx-2 font-bold text-[#1F2937] leading-snug">
+            <h2 className="text-3xl md:text-5xl mx-2 font-bold text-[#1F2937] leading-snug">
               Badmus Adegbite
             </h2>
             <p className="mx-2 md:text-xl max-w-xl mt-8 mb-12">
