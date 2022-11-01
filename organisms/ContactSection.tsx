@@ -218,7 +218,7 @@ const Contact = ({ contact = "" }) => {
           </div>
           <div className="mt-32 text-center">
             <p className=" dark:text-white">
-              Copyright © 2021 <b>KEMI ANIKULAPO</b>
+              Copyright © 2022 <b>BADMUS ADEGBITE</b>
             </p>
           </div>
         </div>
