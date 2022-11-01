@@ -84,7 +84,7 @@ const FeaturedProjects = ({ work = "" }) => {
 
   return (
     <div
-      className="pt-[12.9375rem] third-bg dark:bg-[#1F2937E5] dark:bg-none "
+      className="md:pt-[12.9375rem] third-bg dark:bg-[#1F2937E5] pt-[20rem] dark:bg-none "
       id="project"
     >
       {work ? (

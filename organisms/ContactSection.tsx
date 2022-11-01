@@ -39,7 +39,7 @@ const Contact = ({ contact = "" }) => {
         contact
       ) : (
         <div className="fourth-bg dark:bg-[#1F2937E5] dark:bg-none pt-28">
-          <div className="flex items-center justify-between gradient px-4 md:pl-[3rem]">
+          <div className="flex items-center justify-between gradient pl-2 md:pl-[3rem]">
             <div>
               <p className="text-lg text-[#E5E7EB] dark:text-[#1F2937]">
                 CONTACT
