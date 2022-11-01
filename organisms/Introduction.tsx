@@ -11,22 +11,23 @@ const Intro = () => {
   return (
     <div className="first-bg dark:bg-[#1F2937E5] dark:text-[#F9FAFB]">
       <Navbar {...navData} />
-      <div className="dark:bg-[#1F2937E5] flex-col-reverse md:flex-row md:justify-between items-center begee1">
-        <div className="flex mx-auto container mt-[8.5rem] justify-between items-center">
+      <div className="dark:bg-[#1F2937E5] begee1">
+        <div className="flex mx-4 md:mx-auto flex-col-reverse md:flex-row md:justify-between container mt-[8.5rem] justify-between items-center">
           <div className="">
-            <div className="flex">
+            <div className="flex mx-2">
               <p className="text-5xl font-medium leading-snug">Hi I&apos;m</p>
               <Image
                 src="/vectors/hand.svg"
                 width={50}
                 height={50}
                 alt="hand-meme"
+                className=""
               />
             </div>
-            <h2 className="text-5xl font-bold text-[#1F2937] leading-snug">
+            <h2 className="text-5xl mx-2 font-bold text-[#1F2937] leading-snug">
               Badmus Adegbite
             </h2>
-            <p className="text-xl  max-w-xl mt-8 mb-12">
+            <p className="mx-2 md:text-xl max-w-xl mt-8 mb-12">
               Apt and resourceful Frontend Software Engineer with 2 years of
               experience designing, developing, and managing apps and internal
               frameworks. Specializes in ReactJS, Next Js, Typescript, and
@@ -34,7 +35,7 @@ const Intro = () => {
               thinker. I lead an adventurous lifestyle when not working.
             </p>
 
-            <div className="flex gap-3">
+            <div className="mx-2 flex md:flex-row flex-col gap-3">
               <a href="#contact" className="w-[235px]">
                 <Button
                   icon

@@ -39,25 +39,25 @@ const Contact = ({ contact = "" }) => {
         contact
       ) : (
         <div className="fourth-bg dark:bg-[#1F2937E5] dark:bg-none pt-28">
-          <div className="flex items-center justify-between gradient md:pl-[3rem]">
+          <div className="flex items-center justify-between gradient px-4 md:pl-[3rem]">
             <div>
               <p className="text-lg text-[#E5E7EB] dark:text-[#1F2937]">
                 CONTACT
               </p>
-              <p className="mb-6 text-3xl dark:text-[#1F2937] text-white text-[2rem] font-bold">
+              <p className="mb-6 text-lg md:text-3xl dark:text-[#1F2937] text-white text-[2rem] font-bold">
                 Let's Work Together
               </p>
-              <div className="bg">
+              <div className="bg font-normal md:font-semibold">
                 <a
                   href="mailto:adegbitebidmus@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Button font size text="adegbitebidmus@gmail.com" />
+                  <Button font text="adegbitebidmus@gmail.com" />
                 </a>
               </div>
             </div>
-            <div className="enve">
+            <div className="enve hidden md:flex">
               <Image
                 src="/images/message.png"
                 alt="ms"

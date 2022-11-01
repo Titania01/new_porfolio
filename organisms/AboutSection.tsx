@@ -32,16 +32,16 @@ const techStack = [
 const AboutSection = ({ about = "" }) => {
   return (
     <div className="second-bg flex justify-center" id="about">
-      <div className=" pt-[16.75rem] dark:bg-[#1F2937E5] dark:bg-none">
+      <div className=" pt-[16.75rem] mx-4 dark:bg-[#1F2937E5] dark:bg-none">
         <div>
           <p className="dark:text-white">ABOUT ME</p>
           <p className="font-bold text-[2.5rem] text-[#1f2037] dark:text-white">
             A bit about me.
           </p>
-          <p className="text-[#4f4f4f] font-semibold lg:max-w-[40rem]  text-sm lg:text-lg pt-6 dark:text-white">
+          <p className="text-[#4f4f4f] md:font-semibold max-w-none md:max-w-[40rem] text-sm md:text-lg pt-6 dark:text-white">
             {about
               ? about
-              : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet nunc ultrices ac mauris, quis erat consequat odio. Pretium aliquet nunc eget consectetur diam felis justo. Tempor ornare   nunc facilisi amet. Sed dui orci, ut pharetra. Vulputate id lectus laoreet sagittis non. Pharetra purus quam mauris malesuada etiam nullam. Ultrices nec in massa consequat erat iaculis leo."}
+              : "I try as much as possible to maintain knowledge and a keen understanding of design trends and practices and assisting in the implementation of new design innovations in all the projects I work on. I am always open for collaborations on projects. I also work effectively on solo projects on timely basis"}
           </p>
 
           <div className="flex mt-12">

@@ -35,10 +35,11 @@ export interface ButtonTypes {
     width?: any
 }
 
-export interface ProjectArrayTypes {
-    img: HTMLImageElement,
+export interface ProjectCardTypes {
+    src: any,
     alt: string,
+    text: string,
     desc: string,
-    techStack: string[],
+    techArr: string[],
     href: any
 }

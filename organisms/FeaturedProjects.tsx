@@ -9,11 +9,13 @@ import hayak from "../public/images/hayakPic.png";
 import kovid from "../public/images/kovidPic.png";
 import lawparlance from "../public/images/lawparlancePic.png";
 import admindashboard from "../public/images/admindashboardPic.png";
+import ProjectCard from "../molecules/ProjectCard";
 
 const projectArray = [
   {
     img: karasey,
     alt: "project-pic",
+    title: "Karasey",
     desc: "karasey is a research awareness website that fund scientific researches and other academic research",
     techStack: [
       "NextJs",
@@ -28,6 +30,7 @@ const projectArray = [
   {
     img: hayak,
     alt: "project-pic",
+    title: "Hayak",
     desc: "hayak is a Saudi Arabian website where people can book a tour to traditional and historical places",
     techStack: ["NextJs", "TailwindCss", "Node", "Typescript"],
     href: "https://hayak.sa/en",
@@ -35,6 +38,7 @@ const projectArray = [
   {
     img: lawparlance,
     alt: "project-pic",
+    title: "Law Parlance",
     desc: "Law Parlance is legal website that contains a lot of e-books on legal practice, resources, and notes. You can read, take notes and download any resources on it",
     techStack: ["ReactJs", "Paas", "Node"],
     href: "https://www.lawparlance.com/",
@@ -42,6 +46,7 @@ const projectArray = [
   {
     img: kovid,
     alt: "project-pic",
+    title: "Kovid Tracker",
     desc: "This is a pet project that gives all data about menace of Covid-19 in all 36 states including FCT in Nigeria",
     techStack: ["React", "Typescript", "Redux"],
     href: "https://vermillion-trifle-231875.netlify.app/",
@@ -49,6 +54,7 @@ const projectArray = [
   {
     img: admindashboard,
     alt: "project-pic",
+    title: "Admin Dashboard",
     desc: "This is a side project to hone my skill on styling with MUI and dashboard layout with react-router-dom",
     techStack: ["React", "ContextAPI", "MUI", "Git"],
   },
@@ -76,29 +82,27 @@ const responsive = {
 const FeaturedProjects = ({ work = "" }) => {
   const carouselEl = useRef<any>(null);
 
-  const projectNames = "Koprative,Weather Forecast,Zonely,Fruitfy,Lasana".split(
-    ","
-  );
-
   return (
     <div
-      className="lg:pl-[12.9375rem] pt-[12.9375rem] lg:pr-[6.4375rem] third-bg dark:bg-[#1F2937E5] dark:bg-none "
+      className="pt-[12.9375rem] third-bg dark:bg-[#1F2937E5] dark:bg-none "
       id="project"
     >
       {work ? (
         work
       ) : (
-        <div className="text-lg font-normal" id="work">
-          <p className="text-[#1f2937] dark:text-white">FEATURED PROJECTS</p>
+        <div className="text-lg mx-auto w-[90%] font-normal" id="work">
+          <p className="text-[#1f2937] text-base dark:text-white">
+            FEATURED PROJECTS
+          </p>
 
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <h2 className="font-bold text-[2.5rem] dark:text-white text-[#1f2937] pr-8">
+              <h2 className="font-semibold  md:font-bold text-base md:text-[2.5rem] dark:text-white text-[#1f2937] pr-8">
                 Stuffs I&apos;ve Worked On
               </h2>
               <Image src="/images/file.png" width={32} height={32} alt="file" />
             </div>
-            <div className="flex items-center md:pr-[13.75rem]">
+            <div className="flex items-center md:pr-[6.75rem]">
               <div
                 className="mr-6 arrow"
                 onClick={() => carouselEl.current?.previous()}
@@ -123,7 +127,7 @@ const FeaturedProjects = ({ work = "" }) => {
         </div>
       )}
 
-      <div className="mt-16 ">
+      <div className="mt-16 mx-auto w-[90%]">
         <Carousel
           ref={carouselEl}
           swipeable={true}
@@ -138,11 +142,20 @@ const FeaturedProjects = ({ work = "" }) => {
           ssr={true}
           deviceType="laptop"
         >
-          {projectArray.map((item, itemIndex) => (
-            <Fragment key={`project-index-${itemIndex}`}>
-              {/* <Card projectName={item} /> */}
-            </Fragment>
-          ))}
+          {projectArray.map(
+            ({ title, desc, alt, img, techStack, href }, itemIndex) => (
+              <Fragment key={`project-index-${itemIndex}`}>
+                <ProjectCard
+                  alt={alt}
+                  text={title}
+                  desc={desc}
+                  src={img}
+                  href={href}
+                  techArr={techStack}
+                />
+              </Fragment>
+            )
+          )}
         </Carousel>
       </div>
     </div>

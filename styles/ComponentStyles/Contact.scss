@@ -9,7 +9,7 @@
 
 .gradient {
   background: linear-gradient(90deg, #8b5cf6, #ec4899);
-  @apply rounded-2xl h-60 w-[80%]  mx-auto mb-20;
+  @apply rounded-2xl h-60 w-[90%] md:w-[80%]  mx-auto mb-20;
 }
 
 .enve {
