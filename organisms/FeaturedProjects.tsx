@@ -5,6 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 // import Card from "../molecules/ProjectCard";
 
 import karasey from "../public/images/karaseyPic.png";
+import koprative from "../public/images/koprativePic.png";
 import hayak from "../public/images/hayakPic.png";
 import kovid from "../public/images/kovidPic.png";
 import lawparlance from "../public/images/lawparlancePic.png";
@@ -26,6 +27,14 @@ const projectArray = [
       "MongoDB",
     ],
     href: "https://karasey.com/en",
+  },
+  {
+    alt: "project-pic",
+    title: "Koprative",
+    img: koprative,
+    desc: "Koprative is a cooperative society management application that helps financial institutions manage their members’ information and financial transactions and records. ",
+    techStack: ["React", "Typescript", "Redux"],
+    href: "",
   },
   {
     img: hayak,

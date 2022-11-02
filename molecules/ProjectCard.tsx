@@ -51,7 +51,7 @@ const ProjectCard = ({
   techArr,
 }: ProjectCardTypes) => {
   return (
-    <div className=" mr-6 border-2 border-[#E5E7EB] dark:border-[#313131]  bg-project dark:bg-[#1F2937] p-6 rounded-[2rem] ">
+    <div className=" mr-6 border-2 border-[#E5E7EB] dark:border-[#313131]   dark:bg-[#1F2937] p-6 rounded-[2rem] ">
       <div className="mb-8">
         <a href={href} target="_blank" rel="noreferrer">
           <Image
@@ -62,7 +62,7 @@ const ProjectCard = ({
         </a>
       </div>
       <p className="font-medium text-2xl mb-4">{text}</p>
-      <p className="opacity-60 mb-4 h-[4rem]">{desc}</p>
+      <p className="opacity-60 mb-4">{desc}</p>
       <div className="flex overflow-scroll">
         {techArr.map((text, index) => (
           <div
