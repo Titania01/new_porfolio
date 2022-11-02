@@ -109,7 +109,14 @@ const FeaturedProjects = ({ work = "" }) => {
               <h2 className="font-semibold  md:font-bold text-base md:text-[2.5rem] dark:text-white text-[#1f2937] pr-8">
                 Stuffs I&apos;ve Worked On
               </h2>
-              <Image src="/images/file.png" width={32} height={32} alt="file" />
+              <div className="hidden md:flex">
+                <Image
+                  src="/images/file.png"
+                  width={32}
+                  height={32}
+                  alt="file"
+                />
+              </div>
             </div>
             <div className="flex items-center md:pr-[6.75rem]">
               <div

@@ -53,7 +53,7 @@ const Contact = ({ contact = "" }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="button w-[8rem] flex justify-center md:w-none">
+                  <div className="button">
                     <Button font text="adegbitebidmus@gmail.com" />
                   </div>
                 </a>
