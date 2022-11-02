@@ -51,7 +51,7 @@ const ProjectCard = ({
   techArr,
 }: ProjectCardTypes) => {
   return (
-    <div className=" mr-6 border-2 border-[#E5E7EB] dark:border-[#313131]   dark:bg-[#1F2937] p-6 rounded-[2rem] ">
+    <div className="mr-0 md:mr-6 border-2 border-[#E5E7EB] dark:border-[#313131]   dark:bg-[#1F2937] p-6 rounded-[2rem] ">
       <div className="mb-8">
         <a href={href} target="_blank" rel="noreferrer">
           <Image

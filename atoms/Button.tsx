@@ -30,7 +30,7 @@ const Button = ({
         "bg-gray-200 dark:bg-[#1F2937] opacity-50 border border-solid border-[#E5E7EB]"
       } ${
         bg && "dark:border-[#4F4F4F]"
-      } hover:cursor-pointer px-6 py-3 rounded-lg mr-4`}
+      } hover:cursor-pointer px-6 py-3 rounded-lg`}
     >
       <div className="flex items-center justify-between">
         {logo && <div className="mr-3">{darkLogo}</div>}
